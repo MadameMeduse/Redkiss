@@ -1,0 +1,115 @@
+#footer {
+    color: var(--color1);
+}
+
+#footer > .grid-container {
+    border-top: 1px solid transparent;
+    padding-top: 2rem;
+}
+
+#footer h3 {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+#footer > .grid-container ul {
+    font-size: 1.25rem;
+    display: none;
+    list-style: none;
+}
+
+#footer > .grid-container ul.list-on {
+    display: block;
+}
+
+#footer > .grid-container ul > li {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#footer > .grid-container ul > li:last-child {
+    margin-bottom: 3rem;
+}
+
+#footer > .footer-contact {
+    display: none;
+}
+
+#footer > a > img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 979px) {
+    
+    #footer > .grid-container {
+        padding-top: 3rem;
+    }
+
+    #footer h3 {
+        text-align: initial;
+        cursor: initial;
+        letter-spacing: 1px;
+    }
+
+    #footer > .grid-container {
+        border-top: 1px solid var(--color4);
+    }
+    
+    #footer > .grid-container ul {
+        display: block;
+        color: var(--color4);
+        font-size: 1.2rem;
+        column-count: 2;
+    }
+    
+    #footer > .grid-container ul > li {
+        text-align: initial;
+        padding: 0.4rem 0;
+        margin: 0;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #footer > .grid-container ul > li:last-child {
+        margin-bottom: 0;
+    }
+
+    #footer > .grid-container ul > li:hover {
+        color: var(--color2);
+    }
+
+    #footer > .footer-contact {
+        margin-top: 5rem;
+        display: block;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    #footer > .footer-contact > span {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #footer > .footer-contact > span:hover {
+        color: var(--color2);
+    }
+
+    #footer > .footer-contact > span:nth-child(2) {
+        border-left: 1px solid var(--color4);
+        border-right: 1px solid var(--color4);
+        line-height: 0.5rem;
+    }
+
+    #footer > a > img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 4rem;
+    }
+}
